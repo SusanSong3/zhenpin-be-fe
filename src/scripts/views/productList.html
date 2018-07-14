@@ -1,0 +1,15 @@
+
+{{each msg}}
+<tr>
+    <td>{{$value.id}}</td>
+    <td><img src="http://localhost:3000/uploads/{{$value.picture}}"/></td>
+    <!--<td><img src="http://localhost:3000/uploads/"/></td>-->
+    <td>{{$value.name}}</td>
+    <td>OMEGA 欧米茄</td>
+    <td></td>
+    <!--<td>{{$value.item_updataTime}}</td>-->
+    <td>发布中</td>
+    <td><button type="button"class="remove btn btn-block btn-danger" proimg="{{$value.picture}}" proid="{{$value.id}}">删除</button></td>
+    <td><button type="button" class="productEdit btn btn-block btn-success" proid="{{$value.id}}">编辑</button></td>
+</tr>
+{{/each}}
